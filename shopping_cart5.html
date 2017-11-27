@@ -28,9 +28,9 @@ Enter price: <input type="text" ng-model="newItemprice" />
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope){
 $scope.items = [
-{name:"Bread", price: 20, isSelected: false},
-{name:"Butter", price: 25, isSelected: false},
-{name:"Jam", price: 30, isSelected: false},
+{name:"Bread", price: 20, isSelected: false, quantity: 1},
+{name:"Butter", price: 25, isSelected: false, quantity: 1},
+{name:"Jam", price: 30, isSelected: false, quantity: 1},
 ];
 $scope.addtoshop = function(){
 var newitem = {};
