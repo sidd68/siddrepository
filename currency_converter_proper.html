@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+<div><label>Enter amount:</label>
+<input type="text" ng-model="amount" />
+</div>
+<div>
+Select 'From' currency:
+<select ng-model="myVar">
+<option ng-repeat="fromCurrency in fromCurrencyList" value="{{fromCurrency.code}}">{{fromCurrency.code}}</option>
+</select>
+</div>
+<div>
+Select 'To' currency:
+<select ng-model="myVar2">
+<option ng-repeat="toCurrency in toCurrencyList" value="{{toCurrency.code}}">{{toCurrency.code}}</option>
+</select>
+</div>
+<div>
+<button ng-click="convert()">Convert</button>
+{{output}}
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope){
+$scope.toCurrencyList = [{code: "inr"}];
+$scope.fromCurrencyList = [];
+$scope.fromCurrencyList.push({code: "usd", value: 70});
+$scope.fromCurrencyList.push({code: "gbp", value: 80});
+$scope.fromCurrencyList.push({code: "eur", value: 60});
+$scope.myVar="usd";
+$scope.myVar2="inr";
+$scope.convert = function(){
+for(var currencyindex in $scope.fromCurrencyList)
+{
+if($scope.myVar == $scope.fromCurrencyList[currencyindex].code){
+$scope.output = $scope.amount + " " + $scope.fromCurrencyList[currencyindex].code + " equals " + $scopefromCurrencyList[currencyindex].value*$scope.amount + " " + $scope.myVar2;
+alert($scope.output);
+}
+}
+}
+});
+</script>
+</body>
+</html>
