@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+<button ng-click="myClick()">Click me</button>
+<div ng-show="showMe">
+<h1>Menu</h1>
+<p>Pastaaaaaaaaaa</p>
+<p>Cake</p>
+<p>Noodles</p>
+</div>
+</div>
+<script>
+
+var app=angular.module('myApp', []);
+app.controller('myCtrl', function($scope){
+$scope.showMe = false;
+$scope.myClick = function(){
+$scope.showMe = true;
+}
+});
+</script>
+
+</body>
+</html>
