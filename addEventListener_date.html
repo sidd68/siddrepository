@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<p>This page uses addEventListener() method to display date</p>
+<button id = "myBtn">Try it</button>
+<p id = "demo"></p>
+<script>
+document.getElementById("myBtn").addEventListener("click", displaydate);
+function displaydate(){
+document.getElementById("demo").innerHTML = Date();
+}
+</script>
+</body>
+</html>
