@@ -1,0 +1,47 @@
+sh-4.4$ pwd                                                                                                                      
+
+/home/cg/root                                                                                                                    
+
+sh-4.4$ cat > ssd.txt                                                                                                            
+
+my name is siddhesh. my last name is deshmukh.                                                                                   
+
+^Z                                                                                                                               
+
+[1]+  Stopped(SIGTSTP)        cat > ssd.txt                                                                                      
+
+sh-4.4$ cat ssd.txt | tr name names                                                                                              
+
+my name is siddhesh. my last name is deshmukh.                                                                                   
+
+sh-4.4$ tr  "name" "names" < ssd.txt                                                                                             
+
+my name is siddhesh. my last name is deshmukh.                                                                                   
+
+sh-4.4$ tr name nms < ssd.txt                                                                                                    
+
+sy nmss is siddhssh. sy lmst nmss is dsshsukh.                                                                                   
+
+sh-4.4$ cat > ssd2.txt                                                                                                           
+
+My name is  Siddhesh. My last name is Deshmukh.                                                                                  
+
+^Z                                                                                                                               
+
+[2]+  Stopped(SIGTSTP)        cat > ssd2.txt                                                                                     
+
+sh-4.4$ sed -e 's/name/names/g' ssd2.txt > ssd3.txt                                                                              
+
+sh-4.4$ cat ssd3.txt                                                                                                             
+
+My names is  Siddhesh. My last names is Deshmukh.                                                                                
+
+sh-4.4$ ^C                                                                                                                       
+
+sh-4.4$                                                                                                                          
+
+                                                                                                                                 
+
+                                                                                                                                 
+
+                     
