@@ -1,0 +1,21 @@
+sh-4.4$ cat > ssd.txt                                                                                                                      
+
+Hi! My name is Siddhesh. I'm 34 years old.                                                                                                 
+
+^Z                                                                                                                                         
+
+[1]+  Stopped(SIGTSTP)        cat > ssd.txt                                                                                                
+
+sh-4.4$ cat ssd.txt                                                                                                                        
+
+Hi! My name is Siddhesh. I'm 34 years old.                                                                                                 
+
+sh-4.4$ date >> ssd.txt                                                                                                                    
+
+sh-4.4$ cat ssd.txt                                                                                                                        
+
+Hi! My name is Siddhesh. I'm 34 years old.                                                                                                 
+
+Tue Feb 20 13:01:33 UTC 2018                                                                                                               
+
+sh-4.4$ ^C                                                                                                                                 
