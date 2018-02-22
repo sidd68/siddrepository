@@ -1,0 +1,43 @@
+sh-4.4$ mkdir -p ssd{1, 2}                                                                                                                                 
+
+sh-4.4$ ls                                                                                                                                                 
+
+2}  README.txt  ssd{1,                                                                                                                                     
+
+sh-4.4$ mkdir -p ssd/200{1, 2}                                                                                                                             
+
+sh-4.4$ ls                                                                                                                                                 
+
+2}  README.txt  ssd  ssd{1,                                                                                                                                
+
+sh-4.4$ mkdir -p ssd/200{1,2}                                                                                                                              
+
+sh-4.4$ ls                                                                                                                                                 
+
+2}  README.txt  ssd  ssd{1,                                                                                                                                
+
+sh-4.4$ mkdir siddhesh/{1,2}                                                                                                                               
+
+mkdir: cannot create directory 'siddhesh/1': No such file or directory                                                                                     
+
+mkdir: cannot create directory 'siddhesh/2': No such file or directory                                                                                     
+
+sh-4.4$ mkdir siddhesh/10{1,2}                                                                                                                             
+
+mkdir: cannot create directory 'siddhesh/101': No such file or directory                                                                                   
+
+mkdir: cannot create directory 'siddhesh/102': No such file or directory                                                                                   
+
+sh-4.4$ mkdir siddhesh{1,2}                                                                                                                                
+
+sh-4.4$ ls                                                                                                                                                 
+
+2}  README.txt  siddhesh1  siddhesh2  ssd  ssd{1,                                                                                                          
+
+sh-4.4$ mkdir india{1,2,3,4,5,6,7,8,9,10}                                                                                                                  
+
+sh-4.4$ ls                                                                                                                                                 
+
+2}  README.txt  india1  india10  india2  india3  india4  india5  india6  india7  india8  india9  siddhesh1  siddhesh2  ssd  ssd{1,                         
+
+sh-4.4$ ^C                                                                                                                                                 
