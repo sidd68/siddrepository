@@ -1,0 +1,7 @@
+sh-4.4$ mkdir ssd{1..5}                                                                                                                                    
+
+sh-4.4$ ls                                                                                                                                                 
+
+README.txt  ssd1  ssd2  ssd3  ssd4  ssd5                                                                                                                   
+
+sh-4.4$ ^C                                                                                                                                                 
