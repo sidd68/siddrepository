@@ -1,0 +1,51 @@
+sh-4.4$ ps a                                                                                                                                               
+
+  PID TTY      STAT   TIME COMMAND                                                                                                                         
+
+   12 pts/0    Ss     0:00 sh                                                                                                                              
+
+   18 pts/0    S+     0:00 /bin/bash                                                                                                                       
+
+   19 pts/1    Ss     0:00 sh                                                                                                                              
+
+   21 pts/1    R+     0:00 ps a                                                                                                                            
+
+sh-4.4$ ps u                                                                                                                                               
+
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND                                                                                   
+
+45549       12  0.0  0.0  29716  2276 pts/0    Ss   08:52   0:00 sh                                                                                        
+
+45549       18  0.0  0.0  29716  2040 pts/0    S+   08:52   0:00 /bin/bash                                                                                 
+
+45549       19  0.0  0.0  29716  2264 pts/1    Ss   08:52   0:00 sh                                                                                        
+
+45549       22  0.0  0.0  39256  1664 pts/1    R+   08:53   0:00 ps u                                                                                      
+
+sh-4.4$ ps w                                                                                                                                               
+
+  PID TTY      STAT   TIME COMMAND                                                                                                                         
+
+   12 pts/0    Ss     0:00 sh                                                                                                                              
+
+   18 pts/0    S+     0:00 /bin/bash                                                                                                                       
+
+   19 pts/1    Ss     0:00 sh                                                                                                                              
+
+   23 pts/1    R+     0:00 ps w                                                                                                                            
+
+sh-4.4$ ps x                                                                                                                                               
+
+  PID TTY      STAT   TIME COMMAND                                                                                                                         
+
+    1 ?        Ssl    0:01 --CODINGGROUND--                                                                                                                
+
+   12 pts/0    Ss     0:00 sh                                                                                                                              
+
+   18 pts/0    S+     0:00 /bin/bash                                                                                                                       
+
+   19 pts/1    Ss     0:00 sh                                                                                                                              
+
+   24 pts/1    R+     0:00 ps x                                                                                                                            
+
+sh-4.4$ ^C                                                                                                                                                 
