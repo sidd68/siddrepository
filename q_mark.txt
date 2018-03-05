@@ -1,0 +1,45 @@
+sh-4.4$ pwd                                                                                                                               
+
+/home/cg/root                                                                                                                             
+
+sh-4.4$ cat > mouse.txt                                                                                                                   
+
+I am house, mouse, rouse, etc.                                                                                                            
+
+^Z                                                                                                                                        
+
+[1]+  Stopped(SIGTSTP)        cat > mouse.txt                                                                                             
+
+sh-4.4$ cat > house.txt                                                                                                                   
+
+house. house.                                                                                                                             
+
+^Z                                                                                                                                        
+
+[2]+  Stopped(SIGTSTP)        cat > house.txt                                                                                             
+
+sh-4.4$ ls ?ouse.txt                                                                                                                      
+
+house.txt  mouse.txt                                                                                                                      
+
+sh-4.4$ cat > grouse.txt                                                                                                                  
+
+grouse.                                                                                                                                   
+
+^Z                                                                                                                                        
+
+[3]+  Stopped(SIGTSTP)        cat > grouse.txt                                                                                            
+
+sh-4.4$ ls ??ouse.txt                                                                                                                     
+
+grouse.txt                                                                                                                                
+
+sh-4.4$ rm ??????.txt                                                                                                                     
+
+sh-4.4$ ls                                                                                                                                
+
+house.txt  mouse.txt                                                                                                                      
+
+sh-4.4$                                                                                                                                   
+
+          
